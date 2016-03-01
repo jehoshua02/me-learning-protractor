@@ -1,0 +1,14 @@
+{
+  "name": "my-first-protractor-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "protractor": "^3.1.1"
+  }
+}
