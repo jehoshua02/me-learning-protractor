@@ -3,7 +3,7 @@ exports.config = {
   specs: ['spec.js'],
   framework: 'mocha',
   mochaOpts: {
-    slow: 3000
+    timeout: 10000
   },
   onPrepare: function () {
     // configure chai for assertions

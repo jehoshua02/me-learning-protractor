@@ -21,6 +21,6 @@ describe('Protractor Demo App', function() {
     add(3, 4);
 
     expect(history.last().getText()).to.eventually.include('1 + 2');
-    expect(history.first().getText()).to.eventually.include('3 + 5');
+    expect(history.first().getText()).to.eventually.include('3 + 4');
   });
 });
