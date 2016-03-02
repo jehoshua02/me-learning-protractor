@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "webdriver-manager update",
     "test": "protractor conf.js"
   },
   "author": "",
