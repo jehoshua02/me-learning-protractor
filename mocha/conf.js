@@ -1,11 +1,14 @@
-var chai = require('chai');
-var chaiAsPromised = require('chai-as-promised');
-
-chai.use(chaiAsPromised);
-global.expect = chai.expect;
-
 // conf.js
 exports.config = {
+  specs: ['spec.js'],
   framework: 'mocha',
-  specs: ['spec.js']
+  mochaOpts: {
+    slow: 3000
+  },
+  onPrepare: function () {
+    // configure chai for assertions
+    var chai = require('chai');
+    chai.use(require('chai-as-promised'));
+    global.expect = chai.expect;
+  }
 }
